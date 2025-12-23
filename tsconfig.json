@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["node"]
+  },
+  "include": [
+    "index.tsx", 
+    "App.tsx", 
+    "types.ts", 
+    "constants.tsx", 
+    "components/DataExplorer.tsx", 
+    "components/AddEntryModal.tsx", 
+    "components/RecommendationView.tsx",
+    "data/**/*"
+  ],
+  "exclude": ["server.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
